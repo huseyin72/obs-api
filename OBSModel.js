@@ -35,6 +35,25 @@ const OBSModel = sequelize.define('OBSModel',{
             } 
           }
     },
+
+    faculty:{
+        type:DataTypes.STRING,
+        allowNull:false,
+    },
+    department:{
+        type:DataTypes.STRING,
+        allowNull:false,
+        
+    },
+    
+    nationalIdentityNumber:{
+        type:DataTypes.STRING,
+        allowNull:false,   
+    },
+    telephone:{
+        type:DataTypes.STRING,
+        allowNull:false,   
+    }
 });
 
 OBSModel.beforeCreate(async(student)=>{
